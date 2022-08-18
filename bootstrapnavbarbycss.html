@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my epistle</title>
+    <style>
+        /*targeting navbar class*/
+        
+        .navbar {
+            background-color: #4fb3b3;
+            border-radius: 10px;
+            height: 60px;
+            font-size: 26px;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+            /* to regain the background color */
+        }
+        
+        .navbar li {
+            float: left;
+            /*bullets got overlapped so remove them*/
+            list-style: none;
+            /*background color dissappeared becouse on using float it got erased from parent*/
+            margin: 5px 5px;
+        }
+        
+        .navbar li a {
+            padding: 23px 106px;
+            text-decoration: none;
+            /*to remove underline*/
+            color: black;
+            margin-top: 10px;
+
+        }
+        
+        .navbar li :hover {
+            color: blanchedalmond;
+        }
+        
+        .search {
+            float: right;
+            color: black;
+            padding: 12px 75px;
+        }
+        
+        .navbar input {
+            border: 2px solid blueviolet border-radius: 4px;
+            padding: 3px 30 px;
+            width: 120px
+        }
+        
+        .navbar li a:hover {
+            background-color: aliceblue;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="SEARCH YOUR WRITE UP">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
